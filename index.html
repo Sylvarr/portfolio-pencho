@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="salida.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body class="bg-base font-sans text-body selection:bg-brand selection:text-white">
+
+  <main>
+    <nav id="navbar" class="h-16 backdrop-blur-md bg-base/90 shadow-sm fixed top-0 w-full z-50 select-none">
+
+      <div id="mobile-menu"
+        class="hidden md:hidden bg-base w-full absolute top-16 left-0 border-b border-gray-200 shadow-xl">
+        <div class="flex flex-col p-4 space-y-2 font-medium text-body">
+          <a href="#" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+            Sobre mí
+          </a>
+          <a href="#" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+            Stack
+          </a>
+          <a href="#" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+            Proyectos
+          </a>
+          <a href="#"
+            class="anchor block px-4 py-3 rounded-lg text-brand font-bold bg-gray-50 hover:bg-gray-100 transition-colors">
+            Contacto
+          </a>
+        </div>
+      </div>
+
+      <div class="h-full max-w-5xl mx-auto px-6 flex items-center justify-between">
+
+        <div class="font-serif font-bold text-xl text-body cursor-pointer">
+          Pencho<span class="text-brand">.</span>dev
+        </div>
+
+        <nav class="hidden md:flex gap-8 text-sm font-medium text-muted">
+          <a href="#" class="hover:text-body transition-colors">Sobre mí</a>
+          <a href="#" class="hover:text-body transition-colors">Stack</a>
+          <a href="#" class="hover:text-body transition-colors">Proyectos</a>
+        </nav>
+
+        <a href="#"
+          class="hidden md:block bg-body text-base px-5 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm font-medium shadow-md hover:shadow-lg">
+          Contacto
+        </a>
+
+        <button id="menu-btn" class="block md:hidden p-2 rounded-md hover:bg-gray-100 text-body">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+
+      </div>
+    </nav>
+
+    <section id="hero" class="pt-20 mt-5 justify-center">
+      <div class="w-full max-w-5xl mx-auto grid md:grid-cols-2 gap-12 px-6 pb-20 pt-7">
+        <div class="place-self-center text-center md:text-left order-2 md:order-1 px-6">
+
+          <span class="text-brand font-bold tracking-widest text-sm uppercase mb-4 block mt-5">
+            Portfolio <span id="year"></span>
+          </span>
+
+          <h1 class="text-4xl md:text-6xl font-serif font-bold text-body leading-tight mb-6">
+            Liderazgo Operativo <br>
+            <span class="text-brand">&</span> Desarrollo Java
+          </h1>
+
+          <p class="text-muted text-lg md:text-xl leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+            10 años optimizando procesos y gestionando equipos en McDonald's.
+            Ahora, volcando esa mentalidad analítica en el
+            <strong>Backend con Java y SQL"</strong>.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#projects"
+              class="px-8 py-3 bg-brand text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg">
+              Ver Proyectos
+            </a>
+            <a href="https://linkedin.com" target="_blank"
+              class="px-8 py-3 border border-gray-300 text-body rounded-lg font-medium hover:border-brand hover:text-brand transition-colors bg-white">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center order-1 md:order-2">
+
+          <div class="relative">
+            <div class="absolute inset-0 bg-brand/20 rounded-full blur-3xl scale-90"></div>
+
+            <img src="./img/dev.png" alt="Pencho Developer"
+              class="relative w-64 h-64 md:w-80 md:h-80 md:ml-10 rounded-full object-cover border-4 border-white shadow-2xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="h-64 bg-white"></section>
+    <section id="about" class="h-screen bg-base"></section>
+    <section id="projects" class="h-screen bg-white"></section>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
