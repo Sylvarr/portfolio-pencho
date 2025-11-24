@@ -12,3 +12,21 @@
   --font-sans: "Inter", sans-serif;
   --font-serif: "Lora", serif;
 }
+
+.icon-tech {
+  @apply h-12 w-auto transition-all duration-300 grayscale-0 opacity-100;
+
+  @apply md:grayscale md:opacity-60;
+
+  @apply group-hover:grayscale-0 group-hover:opacity-100;
+
+  @apply group-hover:scale-110;
+}
+
+.tech-item {
+  @apply flex flex-col items-center gap-2 md:gap-4 cursor-pointer;
+}
+
+.tech-label {
+  @apply text-xs md:text-sm font-medium text-muted group-hover:text-brand transition-colors;
+}

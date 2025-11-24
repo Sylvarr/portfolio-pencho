@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet">
-  <title>Document</title>
+  <title>Pencho Dev</title>
 </head>
 
 <body class="bg-base font-sans text-body selection:bg-brand selection:text-white">
@@ -107,8 +107,118 @@
       </div>
     </section>
 
-    <section id="stack" class="h-64 bg-white"></section>
-    <section id="about" class="h-screen bg-base"></section>
+    <section id="stack" class="py-14 bg-white shadow-lg shadow-gray-100 relative z-10">
+
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-center text-muted text-xl font-bold uppercase tracking-widest mb-10 font-serif">
+          Tecnologías
+        </h3>
+        <div class="grid grid-cols-4 md:grid-cols-8 gap-y-8 justify-items-center">
+
+          <div class="tech-item group">
+            <img src="./img/icons/java.svg" alt="Java" class="icon-tech">
+            <span class="tech-label">Java</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/javascript.svg" alt="JavaScript" class="icon-tech">
+            <span class="tech-label">JavaScript</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/mysql.svg" alt="MySQL" class="icon-tech">
+            <span class="tech-label">MySQL</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/html5.svg" alt="HTML5" class="icon-tech">
+            <span class="tech-label">HTML5</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/css3.svg" alt="CSS3" class="icon-tech">
+            <span class="tech-label">CSS3</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/git.svg" alt="Git" class="icon-tech">
+            <span class="tech-label">Git</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/linux.svg" alt="Linux" class="icon-tech">
+            <span class="tech-label">Linux</span>
+          </div>
+
+          <div class="tech-item group">
+            <img src="./img/icons/docker.svg" alt="Docker" class="icon-tech scale-125 origin-center">
+            <span class="tech-label">Docker</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="about" class="pt-28 pb-24 bg-cream relative z-10 overflow-hidden">
+      <div class="max-w-5xl mx-auto px-6">
+
+        <h2 class="text-center text-brand font-bold uppercase tracking-widest mb-16 text-xl md:text-2xl font-serif">
+          Sobre mí
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          <div class="space-y-8 order-1">
+
+            <h3 class="font-serif font-bold text-3xl md:text-4xl text-graphite leading-tight">
+              De la gestión de operaciones al <span class="text-brand">código backend</span>.
+            </h3>
+
+            <div class="space-y-6 text-muted font-sans leading-relaxed text-lg md:text-left">
+
+              <p>
+                Durante una década, la eficiencia operativa ha sido mi día a día. Como manager en entornos de alta
+                exigencia,
+                he liderado equipos y optimizado procesos en tiempo real. He aprendido que el éxito no es magia, sino
+                <span class="text-body font-medium">método, estructura y comunicación clara</span>.
+              </p>
+
+              <p>
+                Mi salto al mundo tech es la evolución natural de ese perfil analítico. Actualmente curso el Grado
+                Superior en
+                Desarrollo de Aplicaciones Web (DAW), combinando mi experiencia en gestión con un aprendizaje técnico
+                intensivo para
+                aportar una <span class="text-body font-medium">visión pragmática desde el primer día</span>.
+              </p>
+
+              <p>
+                Mi foco actual es el <span class="text-body font-medium">Backend</span>.
+                Disfruto resolviendo problemas mediante la lógica de <strong>Java</strong> y el diseño de bases de
+                datos, con el
+                objetivo de unir mis dos mundos: entender el <em>para qué</em> del negocio y construir el <em>cómo</em>
+                del
+                software.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="order-2 flex justify-center">
+            <div class="relative w-64 md:w-full max-w-sm">
+              <div
+                class="absolute inset-0 bg-brand opacity-10 rounded-2xl transform rotate-6 translate-x-4 translate-y-4 -z-10">
+              </div>
+
+              <img src="./img/manager.png" alt="Pencho - Desarrollador Backend Java"
+                class="rounded-2xl shadow-xl border-4 border-white relative z-10 transform hover:scale-105 transition-transform duration-500">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
     <section id="projects" class="h-screen bg-white"></section>
 
   </main>
