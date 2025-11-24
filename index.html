@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-pt-20">
 
 <head>
   <meta charset="UTF-8">
@@ -14,23 +14,22 @@
 </head>
 
 <body class="bg-base font-sans text-body selection:bg-brand selection:text-white">
-
   <main>
     <nav id="navbar" class="h-16 backdrop-blur-md bg-base/90 shadow-sm fixed top-0 w-full z-50 select-none">
 
       <div id="mobile-menu"
         class="hidden md:hidden bg-base w-full absolute top-16 left-0 border-b border-gray-200 shadow-xl">
         <div class="flex flex-col p-4 space-y-2 font-medium text-body">
-          <a href="#" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-            Sobre mí
-          </a>
-          <a href="#" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+          <a href="#stack" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
             Stack
           </a>
-          <a href="#" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+          <a href="#about" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+            Sobre mí
+          </a>
+          <a href="#projects" class="anchor block px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors">
             Proyectos
           </a>
-          <a href="#"
+          <a href="#footer"
             class="anchor block px-4 py-3 rounded-lg text-brand font-bold bg-gray-50 hover:bg-gray-100 transition-colors">
             Contacto
           </a>
@@ -38,22 +37,18 @@
       </div>
 
       <div class="h-full max-w-5xl mx-auto px-6 flex items-center justify-between">
-
-        <div class="font-serif font-bold text-xl text-body cursor-pointer">
-          Pencho<span class="text-brand">.</span>dev
+        <div class="font-serif font-bold text-xl text-body cursor-pointer"><a href="#hero">
+            Pencho<span class="text-brand">.</span></a>dev
         </div>
-
         <nav class="hidden md:flex gap-8 text-sm font-medium text-muted">
-          <a href="#" class="hover:text-body transition-colors">Sobre mí</a>
-          <a href="#" class="hover:text-body transition-colors">Stack</a>
-          <a href="#" class="hover:text-body transition-colors">Proyectos</a>
+          <a href="#stack" class="hover:text-body transition-colors">Stack</a>
+          <a href="#about" class="hover:text-body transition-colors">Sobre mí</a>
+          <a href="#projects" class="hover:text-body transition-colors">Proyectos</a>
         </nav>
-
-        <a href="#"
+        <a href="#footer"
           class="hidden md:block bg-body text-base px-5 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm font-medium shadow-md hover:shadow-lg">
           Contacto
         </a>
-
         <button id="menu-btn" class="block md:hidden p-2 rounded-md hover:bg-gray-100 text-body">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-8 h-8">
@@ -62,27 +57,24 @@
         </button>
 
       </div>
+
     </nav>
 
     <section id="hero" class="pt-20 mt-5 justify-center">
       <div class="w-full max-w-5xl mx-auto grid md:grid-cols-2 gap-12 px-6 pb-20 pt-7">
         <div class="place-self-center text-center md:text-left order-2 md:order-1 px-6">
-
           <span class="text-brand font-bold tracking-widest text-sm uppercase mb-4 block mt-5">
             Portfolio <span id="year"></span>
           </span>
-
           <h1 class="text-4xl md:text-6xl font-serif font-bold text-body leading-tight mb-6">
             Liderazgo Operativo <br>
             <span class="text-brand">&</span> Desarrollo Java
           </h1>
-
           <p class="text-muted text-lg md:text-xl leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
             10 años optimizando procesos y gestionando equipos en McDonald's.
             Ahora, volcando esa mentalidad analítica en el
             <strong>Backend con Java y SQL"</strong>.
           </p>
-
           <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a href="#projects"
               class="px-8 py-3 bg-brand text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg">
@@ -94,12 +86,9 @@
             </a>
           </div>
         </div>
-
         <div class="flex justify-center items-center order-1 md:order-2">
-
           <div class="relative">
             <div class="absolute inset-0 bg-brand/20 rounded-full blur-3xl scale-90"></div>
-
             <img src="./img/dev.png" alt="Pencho Developer"
               class="relative w-64 h-64 md:w-80 md:h-80 md:ml-10 rounded-full object-cover border-4 border-white shadow-2xl">
           </div>
@@ -160,30 +149,25 @@
       </div>
 
     </section>
+
     <section id="about" class="pt-28 pb-24 bg-cream relative z-10 overflow-hidden">
       <div class="max-w-5xl mx-auto px-6">
 
         <h2 class="text-center text-brand font-bold uppercase tracking-widest mb-16 text-xl md:text-2xl font-serif">
           Sobre mí
         </h2>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
-
           <div class="space-y-8 order-1">
-
             <h3 class="font-serif font-bold text-3xl md:text-4xl text-graphite leading-tight">
               De la gestión de operaciones al <span class="text-brand">código backend</span>.
             </h3>
-
             <div class="space-y-6 text-muted font-sans leading-relaxed text-lg md:text-left">
-
               <p>
                 Durante una década, la eficiencia operativa ha sido mi día a día. Como manager en entornos de alta
                 exigencia,
                 he liderado equipos y optimizado procesos en tiempo real. He aprendido que el éxito no es magia, sino
                 <span class="text-body font-medium">método, estructura y comunicación clara</span>.
               </p>
-
               <p>
                 Mi salto al mundo tech es la evolución natural de ese perfil analítico. Actualmente curso el Grado
                 Superior en
@@ -191,7 +175,6 @@
                 intensivo para
                 aportar una <span class="text-body font-medium">visión pragmática desde el primer día</span>.
               </p>
-
               <p>
                 Mi foco actual es el <span class="text-body font-medium">Backend</span>.
                 Disfruto resolviendo problemas mediante la lógica de <strong>Java</strong> y el diseño de bases de
@@ -200,17 +183,13 @@
                 del
                 software.
               </p>
-
             </div>
-
           </div>
-
           <div class="order-2 flex justify-center">
             <div class="relative w-64 md:w-full max-w-sm">
               <div
                 class="absolute inset-0 bg-brand opacity-10 rounded-2xl transform rotate-6 translate-x-4 translate-y-4 -z-10">
               </div>
-
               <img src="./img/manager.png" alt="Pencho - Desarrollador Backend Java"
                 class="rounded-2xl shadow-xl border-4 border-white relative z-10 transform hover:scale-105 transition-transform duration-500">
             </div>
@@ -219,14 +198,165 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="h-screen bg-white"></section>
+
+    <section id="projects" class="py-24 bg-white relative z-10">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <h2 class="text-center text-brand font-bold uppercase tracking-widest text-xl md:text-2xl mb-16">
+          Proyectos Destacados
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          <article
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+            <div class="h-48 overflow-hidden relative bg-gray-200 border-b border-gray-100">
+              <img src="./img/proyectos/wanak.jpg" alt="Wanak Web"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute top-4 right-4 bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                En Producción
+              </div>
+            </div>
+
+            <div class="p-6 flex flex-col grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 text-xs font-semibold text-body bg-gray-200 rounded">HTML5</span>
+                <span class="px-2 py-1 text-xs font-semibold text-body bg-gray-200 rounded">CSS Nativo</span>
+                <span class="px-2 py-1 text-xs font-semibold text-body bg-gray-200 rounded">JS</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-body mb-2 group-hover:text-brand transition-colors">
+                Wanak Restaurantes
+              </h3>
+
+              <p class="text-muted text-sm leading-relaxed mb-6 grow">
+                Portal corporativo completo para franquicia. Diseño enfocado en UX para empleados y clientes.
+                Refactorizado
+                recientemente para optimizar rendimiento y estructura (Clean Code).
+              </p>
+
+              <a href="https://wanakrestaurantes.com" target="_blank"
+                class="inline-flex items-center gap-2 text-sm font-bold text-brand hover:underline">
+                Visitar Web
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+            <div class="h-48 overflow-hidden relative bg-gray-200 border-b border-gray-100">
+              <img src="./img/proyectos/nancy.jpg" alt="Limpiezas Nancy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+
+            <div class="p-6 flex flex-col grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 text-xs font-semibold text-body bg-gray-200 rounded">Bootstrap</span>
+                <span class="px-2 py-1 text-xs font-semibold text-body bg-gray-200 rounded">Responsive</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-body mb-2 group-hover:text-brand transition-colors">
+                Digitalización Local
+              </h3>
+
+              <p class="text-muted text-sm leading-relaxed mb-6 grow">
+                Solución web para digitalizar un negocio de limpieza en Vitoria. Diseño <em>Mobile First</em> con
+                Bootstrap para
+                captación de clientes locales.
+              </p>
+
+              <div class="flex gap-4">
+                <a href="https://github.com/Sylvarr/Limpiezasnancy" target="_blank"
+                  class="inline-flex items-center gap-2 text-sm font-bold text-body hover:text-brand transition-colors">
+                  <img src="./img/icons/git.svg" class="w-4 h-4 grayscale"> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+            <div class="h-48 overflow-hidden relative bg-white border-b border-gray-100">
+              <img src="./img/proyectos/dronfood.jpg" alt="Arquitectura DronFood"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            </div>
+
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 text-xs font-semibold text-white bg-brand rounded">Java</span>
+                <span class="px-2 py-1 text-xs font-semibold text-white bg-brand rounded">SQL</span>
+                <span class="px-2 py-1 text-xs font-semibold text-white bg-brand rounded">DB Design</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-body mb-2 group-hover:text-brand transition-colors">
+                Arquitectura DronFood
+              </h3>
+
+              <p class="text-muted text-sm leading-relaxed mb-6 flex-grow">
+                Diseño relacional complejo y lógica de negocio para una plataforma de reparto. Gestión de entidades,
+                relaciones
+                N:M y optimización de consultas.
+              </p>
+
+              <span class="text-xs text-muted italic mt-auto block">Proyecto Académico (DAW)</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer></footer>
+  <footer id="footer" class="bg-body text-white py-12 border-t border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <div class="text-center md:text-left">
+        <div class="font-serif font-bold text-xl mb-2">
+          Pencho<span class="text-brand">.</span>dev
+        </div>
+        <p class="text-gray-400 text-sm">
+          © <span id="footer-year">2025</span> Pencho Danielov. Hecho con
+          <span class="text-red-500">❤</span> y Tailwind CSS.
+        </p>
+      </div>
+
+      <div class="flex gap-6">
+        <a href="https://www.linkedin.com/in/pencho-deskov-00b219225/" target="_blank"
+          class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+
+        <a href="https://github.com/Sylvarr" target="_blank" class="text-gray-400 hover:text-white transition-colors"
+          aria-label="GitHub">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+
+        <a href="mailto:pencho.deskov@gmail.com" class="text-gray-400 hover:text-white transition-colors"
+          aria-label="Email">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-
 
 </html>
