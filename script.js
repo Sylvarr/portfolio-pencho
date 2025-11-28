@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const links = document.querySelectorAll(".anchor");
+let date = new Date().getFullYear();
 
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
@@ -8,7 +9,12 @@ menuBtn.addEventListener("click", () => {
 
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
+  yearSpan.textContent = date;
+}
+
+const footerYear = document.getElementById("footer-year");
+if (footerYear) {
+  footerYear.textContent = date;
 }
 
 document.addEventListener("click", (e) => {
